@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { getURL } from '../Api/fetch';
 import { createContext, useEffect, useState } from 'react';
 
