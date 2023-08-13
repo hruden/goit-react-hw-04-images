@@ -7,7 +7,7 @@ export function Modal ({largeImage, alt, closeModal,}){
     return () => {
       document.removeEventListener("keydown", onEscClose)
     }
-  },[])
+  })
 
   const onEscClose = (e) => {
     if (e.key === "Escape") {
