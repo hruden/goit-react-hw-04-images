@@ -1,7 +1,9 @@
 import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem';
+import { useContext } from 'react';
+import { Context } from 'stateContext/GlobalContext';
 
-export const ImageGallery =({hits, children})=> {
-
+export const ImageGallery =({children})=> {
+  const{hits} = useContext(Context)
     return (
         <ul className="ImageGallery">
           {hits && 
